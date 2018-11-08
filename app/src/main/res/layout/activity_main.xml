@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
     tools:context=".MainActivity">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombres"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombres"
+        android:importantForAutofill="no"
+        android:inputType="" tools:targetApi="o"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apellidos"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apellidos"
+        android:inputType=""
+        android:importantForAutofill="no" tools:targetApi="o" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        android:inputType=""
+        android:autofillHints="" tools:targetApi="o" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usuario"
+        android:importantForAutofill="no"
+        android:inputType="" tools:targetApi="o" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clave"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clave"
+        android:importantForAutofill="no" tools:targetApi="o"
+        android:inputType="" />
     <Button
         android:id="@+id/btncalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:onClick="save"
-        android:text="Enviar" />
+        android:text="@string/enviar" />
     <!--
     <ListView
         android:layout_width="wrap_content"
@@ -20,4 +63,4 @@
         android:id="@+id/listaUser"
         />
     -->
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
